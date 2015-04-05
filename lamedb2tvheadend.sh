@@ -18,7 +18,7 @@ picondir=$4
 
 if [ ! -d "$outputdir" ] || [ ! -f "$e2settingsdir/lamedb" ] || ! sed -n "1{p;q}" "$e2settingsdir/lamedb" | grep -q '4'; then
     echo "ERROR: Check your directories, lamedb should be version 4."
-    echo "USAGE: /lamedb2tvh.sh /e2settingsdir /outputdir http://localhost /picondir"
+    echo "USAGE: /lamedb2tvheadend.sh /e2settingsdir /outputdir http://localhost /picondir"
     echo ""
     echo "Press [ENTER] to exit..."
     read input
